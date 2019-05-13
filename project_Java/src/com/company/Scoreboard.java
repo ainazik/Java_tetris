@@ -105,4 +105,6 @@ class Scoreboard {
     int getScore() {
         return score;
     }
+    
+}
 
