@@ -91,22 +91,6 @@ class Scoreboard {
             addLevel();
     }
 
-    void addLevel() {
-        lines %= 10;
-        if (level < MAXLEVEL)
-            level++;
-    }
-    int getLevel() {
-        return level;
-    }
-
-    int getLines() {
-        return lines;
-    }
-
-    int getScore() {
-        return score;
-    }
 
 
     
