@@ -330,6 +330,34 @@ public class Tetris extends JPanel implements Runnable {
         }
         return count;
     }
+    
+        void removeLine(int line) {
+        for (int c = 0; c < nCols; c++)
+            grid[line][c] = EMPTY;
+
+        for (int c = 0; c < nCols; c++) {
+            for (int r = line; r > 0; r--)
+                grid[r][c] = grid[r - 1][c];
+        }
+    }
+
+    void addShape(Shape s) {
+        for (int[] p : s.pos)
+            grid[fallingShapeRow + p[1]][fallingShapeCol + p[0]] = s.ordinal();
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> {
+            JFrame f = new JFrame();
+            f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            f.setTitle("Tetris");
+            f.setResizable(false);
+            f.add(new Tetris(), BorderLayout.CENTER);
+            f.pack();
+            f.setLocationRelativeTo(null);
+            f.setVisible(true);
+        });
+    }
 
 
 }
