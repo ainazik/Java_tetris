@@ -9,5 +9,19 @@ class Scoreboard {
     private int topscore;
     private boolean gameOver = true;
 
+    void reset() {
+        setTopscore();
+        level = lines = score = 0;
+        gameOver = false;
+    }
+
+    void setGameOver() {
+        gameOver = true;
+    }
+
+    boolean isGameOver() {
+        return gameOver;
+    }
+
    
 }
