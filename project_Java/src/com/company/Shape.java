@@ -54,13 +54,14 @@ final class Config {
     final static int clickY = 400;
     final static int previewCenterX = 467;
     final static int previewCenterY = 97;
-
-
-
-
-
-
-
-
     
-}
+    final static Stroke largeStroke = new BasicStroke(5);
+    final static Stroke smallStroke = new BasicStroke(2);
+
+    final static Color squareBorder = Color.white;
+    final static Color titlebgColor = Color.white;
+    final static Color textColor = Color.black;
+    final static Color bgColor = new Color(0xDDEEFF);
+    final static Color gridColor = new Color(0xBECFEA);
+    final static Color gridBorderColor = new Color(0x7788AA);
+
