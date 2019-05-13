@@ -63,11 +63,6 @@ final class Config {
     final static Color bgColor = new Color(0xDDEEFF);
     final static Color gridColor = new Color(0xBECFEA);
     final static Color gridBorderColor = new Color(0x7788AA);
-    
-
-    
-    
-
-    
+   
 }
 
