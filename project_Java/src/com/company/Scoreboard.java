@@ -94,15 +94,5 @@ class Scoreboard {
             level++;
     }
 
-    int getLevel() {
-        return level;
-    }
 
-    int getLines() {
-        return lines;
-    }
-
-    int getScore() {
-        return score;
-    }
 }
