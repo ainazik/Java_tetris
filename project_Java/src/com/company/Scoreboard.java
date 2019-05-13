@@ -106,7 +106,3 @@ class Scoreboard {
         return score;
     }
 
-
-   
-   
-}
