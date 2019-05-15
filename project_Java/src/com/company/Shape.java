@@ -55,6 +55,12 @@ enum Shape {
     final static int clickY = 400;
     final static int previewCenterX = 467;
     final static int previewCenterY = 97;
+     
+    final static Stroke largeStroke = new BasicStroke(5);
+    final static Stroke smallStroke = new BasicStroke(2);
+
+
+  
     
 
   
